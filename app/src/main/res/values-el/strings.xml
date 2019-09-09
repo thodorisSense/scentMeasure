@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SCENT Μέτρηση</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_sensor_measurement">SensorMeasurementActivity</string>
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="sensorSettings">Ρυθμίσεις αισθητήρων…</string>
+    <string name="temperatureMeasurements">Μετρήσεις αισθητήρα θερμοκρασίας</string>
+    <string name="moistureMeasurements">Μετρήσεις αισθητήρα υγρασίας</string>
+    <string name="optionsMeasurements">μετρήσεις αισθητήρα υγρασίας</string>
+    <string name="sensorMeasurementFrequence">Ενημέρωση…</string>
+    <string name="livingLabDanube">Δέλτα του Δούναβη</string>
+    <string name="synching">Συγχρονισμός</string>
+    <string name="userName">Όνομα χρήστη</string>
+    <string name="password">Κωδικός</string>
+    <string name="loginLbl">Είσοδος</string>
+    <string name="termsOfUseLogin"> By logging in you agree to the terms of use of SCENT</string>
+    <string name="title_activity_login">Σύνδεση</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Όνομα χρήστη</string>
+    <string name="prompt_password">Κωδικός</string>
+    <string name="action_sign_in">Είσοδος</string>
+    <string name="action_sign_in_short">Σύνδεση</string>
+    <string name="error_invalid_email">Η διεύθυνση ηλεκτρονικού ταχυδρομείου δεν είναι έγκυρη</string>
+    <string name="error_invalid_password">Ο κωδικός είναι πολύ μικρός</string>
+    <string name="error_incorrect_password">Ο κωδικός είναι εσφαλμένος</string>
+    <string name="error_field_required">Το πεδίο είναι υποχρεωτικό</string>
+    <string name="permission_rationale">Απαιτείται δικαίωμα επαφών για την συμπλήρωση ηλεκτρονικού ταχυδρομείου
+    </string>
+    <string name="title_activity_web">Δραστηριότητα ιστού</string>
+    <string name="registerLink">Δεν έχετε λογαριασμό; Κάντε κλικ εδώ για να εγγραφείτε!</string>
+    <string name="forgotPassword">Ξεχάσατε τον κωδικό σας; Κάντε κλικ εδώ!</string>
+    <string name="gpsCoordinates">Συντεταγμένες GPS εδώ</string>
+    <string name="sun">ΚΥΡ</string>
+    <string name="mon">ΔΕΥ</string>
+    <string name="tue">ΤΡΙ</string>
+    <string name="today">ΣΗΜΕΡΑ</string>
+    <string name="update">Ενημερώθηκε</string>
+    <string name="synchonisation">Συγχρονισμός</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="upload_measurements">Μεταφόρτωση μετρήσεων</string>
+    <string name="wifi_synch">Συγχρονισμός WiFi</string>
+    <string name="measurements_uploaded_to_scent_cloud">Οι μετρήσεις μεταφορτώθηκαν στην υποδομή SCENT</string>
+    <string name="units">ΜΟΝΑΔΕΣ</string>
+    <string name="upload_only_when_wifi_is_available">Μεταφόρτωση μόνο όταν είναι διαθέσιμο το WiFi</string>
+    <string name="metric">Μετρικό</string>
+    <string name="account">ΛΟΓΑΡΙΑΣΜΟΣ</string>
+    <string name="logout">Αποσυνδέση</string>
+    <string name="stay_logged_in">Μείνετε συνδεδεμένοι</string>
+    <string name="uploadedData">Οί μετρησεις μεταφορτώθηκαν επιτυχώς </string>
+    <string name="storedData">Τα δεδομένα αποθηκεύθηκαν στη συσκευή επιτυχώς</string>
+    <string name="start">ΕΝΑΡΞΗ</string>
+    <string name="stopButton">ΠΑΥΣΗ</string>
+    <string name="temperature">Θερμοκρασία</string>
+    <string name="moisture">Υγρασία</string>
+    <string name="options">Επιλογές</string>
+    <string name="deviceAlias">Επιθυμητό όνομα συσκευής εδώ</string>
+    <string name="waiting">Αναμονή</string>
+    <string name="actionBar">Επιλογή αισθητήρα</string>
+    <string name="language">ΓΛΩΣΣΑ</string>
+    <string name="rom_n">Română</string>
+    <string name="english">English</string>
+    <string name="greek">Ελληνικά</string>
+    <string name="save">ΑΠΟΘΗΚΕΥΣΗ</string>
+    <string name="alias">Όνομα:</string>
+    <string name="international">Διεθνές</string>
+
+
+</resources>

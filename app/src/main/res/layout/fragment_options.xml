@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/scentMuted">
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/synchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:text="@string/synchonisation"
+            android:textColor="@color/scentActionBar"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="@color/scentActionBar"
+            android:layout_below="@+id/synchTitle"
+            android:background="@color/scentActionBar"
+            android:id="@+id/view" />
+
+        <ToggleButton
+            android:id="@+id/synchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/togglebutton"
+            android:layout_below="@+id/view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/synchButton"
+            android:layout_toStartOf="@+id/synchButton"
+            android:textSize="16dp"
+            android:text="@string/upload_measurements"
+            android:layout_above="@+id/textView6" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/togglebutton"
+            android:layout_below="@+id/synchButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp" />
+
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/toggleButton2"
+            android:layout_toStartOf="@+id/toggleButton2"
+            android:textSize="16dp"
+            android:text="@string/wifi_synch" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/synchButton"
+            android:layout_alignBottom="@+id/synchButton"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/synchButton"
+            android:text="@string/measurements_uploaded_to_scent_cloud"
+            android:textColor="@color/scentActionBar"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toggleButton2"
+            android:textColor="@color/scentActionBar"
+            android:text="@string/units"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="@color/scentActionBar"
+            android:layout_below="@+id/textView7"
+            android:background="@color/scentActionBar" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_toStartOf="@+id/toggleButton2"
+            android:text="@string/upload_only_when_wifi_is_available"
+            android:textColor="@color/scentActionBar"
+            android:textSize="10sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/view2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/metric"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton"
+            android:textSize="16dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/international" />
+        </RadioGroup>
+
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/accountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:text="@string/account"
+            android:textColor="@color/scentActionBar"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="@color/scentActionBar"
+            android:background="@color/scentActionBar"
+            android:layout_below="@+id/accountTitle"
+            android:id="@+id/viewAccount" />
+
+        <Button
+            android:id="@+id/logoutButtonAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:layout_below="@+id/viewAccount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="11dp"
+             />
+
+        <TextView
+            android:id="@+id/accountUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/logoutButtonAccount"
+            android:layout_toStartOf="@+id/logoutButtonAccount"
+            android:textSize="16dp"
+            android:text="@string/stay_logged_in"
+           />
+
+        <TextView
+            android:id="@+id/accountEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountUsername"
+            android:text=""
+            android:textColor="@color/scentActionBar"
+            android:textSize="10sp"
+            android:layout_alignEnd="@+id/accountUsername"
+            android:layout_alignParentStart="true" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/languageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:text="@string/language"
+            android:textColor="@color/scentActionBar"
+            android:layout_below="@+id/accountEmail"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="@color/scentActionBar"
+            android:background="@color/scentActionBar"
+            android:layout_below="@+id/languageTitle"
+            android:id="@+id/viewLanguage" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/viewLanguage"
+            android:weightSum="1"
+            android:orientation='horizontal'
+            android:layout_alignParentBottom="true">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/english"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonGreek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_toEndOf="@id/radioButtonEnglish"
+                android:text="@string/greek"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRomanian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/radioGroup"
+                android:text="@string/rom_n"
+                android:textSize="16dp" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+

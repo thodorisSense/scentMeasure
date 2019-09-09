@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/round_conrners"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/scent_logo_big" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="116dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/macAddressTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="ID: "
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/macAddressID"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/macAddressTag"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/macAddressTag"
+                android:text="00:00:00:00"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:id="@+id/deviceAliasTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/macAddressTag"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="@string/alias" />
+
+            <EditText
+                android:id="@+id/deviceAlias"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/deviceAliasTag"
+                android:layout_toRightOf="@+id/deviceAliasTag"
+                android:hint="@string/deviceAlias"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:inputType="textNoSuggestions"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/scentActionBar"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/scentActionBar"
+        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+</RelativeLayout>

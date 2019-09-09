@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Măsurătorile SCENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_sensor_measurement">SensorMeasurementActivity</string>
+    <string name="action_settings">Setări</string>
+    <string name="sensorSettings">Setările Senzorului...</string>
+    <string name="temperatureMeasurements">Măsurătorile senzorului de temperatiră</string>
+    <string name="moistureMeasurements">Măsurătorile senzorului de umiditate</string>
+    <string name="optionsMeasurements">măsurătorile senzorului de umiditate</string>
+    <string name="sensorMeasurementFrequence">Actualizare...</string>
+    <string name="livingLabDanube">Delta Dunării</string>
+    <string name="synching">Sincronizare</string>
+    <string name="userName">Utilizator</string>
+    <string name="password">Parolă</string>
+    <string name="loginLbl">Logare</string>
+    <string name="termsOfUseLogin">Dacă vă logați, acceptați termenii de utilizare SCENT</string>
+    <string name="title_activity_login">Conectare</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Utilizator</string>
+    <string name="prompt_password">Parolă</string>
+    <string name="action_sign_in">Logare</string>
+    <string name="action_sign_in_short">Conectare</string>
+    <string name="error_invalid_email">Această adresă de email este invalidă</string>
+    <string name="error_invalid_password">Această parolă este prea scurtă</string>
+    <string name="error_incorrect_password">Aceasta parolă este incorectă</string>
+    <string name="error_field_required">Permisiile de contact sunt necesare pentru furnizarea completarii emailului</string>
+    <string name="permission_rationale">Permisiile de contact sunt necesare pentru furnizarea completarii emailului
+    </string>
+    <string name="title_activity_web">Activitate Web</string>
+    <string name="registerLink">Nu dețineți un cont? Click aici pentru inregistrare!</string>
+    <string name="forgotPassword">Ați uitat parola? Click aici!</string>
+    <string name="gpsCoordinates">Aici, coordonatele GPS</string>
+    <string name="sun">ΚΥΡ</string>
+    <string name="mon">ΔΕΥ</string>
+    <string name="tue">ΤΡΙ</string>
+    <string name="today">AZI</string>
+    <string name="update">Actualizat la</string>
+    <string name="synchonisation">SINCRONIZARE</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="upload_measurements">Încărcare măsurători</string>
+    <string name="wifi_synch">Sincronizare WiFi</string>
+    <string name="measurements_uploaded_to_scent_cloud">Măsurători încărcate în serverul SCENT</string>
+    <string name="units">UNITĂȚI</string>
+    <string name="upload_only_when_wifi_is_available">Încărcare doar când WiFi este disponibil</string>
+    <string name="metric">Metric</string>
+    <string name="account">CONT</string>
+    <string name="logout">Deconectare</string>
+    <string name="stay_logged_in">Rămâi conectat</string>
+    <string name="uploadedData">Date încărcate</string>
+    <string name="storedData">Date stocate în dispozitiv</string>
+    <string name="start">START</string>
+    <string name="stopButton">STOP</string>
+    <string name="temperature">TEMPERATURĂ</string>
+    <string name="moisture">UMIDITATE</string>
+    <string name="options">OPȚIUNI</string>
+    <string name="deviceAlias">Numele dispozitivului dorit aici</string>
+    <string name="waiting">Așteptare</string>
+    <string name="actionBar">Selecția senzorilor</string>
+    <string name="language">LIMBA</string>
+    <string name="rom_n">Română</string>
+    <string name="english">English</string>
+    <string name="greek">Ελληνικά</string>
+    <string name="save">DEPOZITARE</string>
+    <string name="alias">Alias:</string>
+    <string name="international">Ιnternațional</string>
+
+
+</resources>

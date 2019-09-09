@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/scentMuted">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <TextView android:layout_width="fill_parent"
+        android:id="@+id/sensor_id"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/temperatureMeasurements"
+        android:textSize="20dp"
+        android:textColor="@color/scentext"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/sensor_id"
+        android:orientation="vertical"
+        android:background="@drawable/shady_background"
+
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/scent_logo"
+            android:layout_alignParentTop="true"
+            android:id="@+id/scentLogo" />
+
+        <TextView
+            android:layout_alignBottom="@id/scentLogo"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/scentext"
+            android:id="@+id/textFrequency"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/sensorMeasurementFrequence"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/scentLogo"
+            />
+
+        <TextView
+            android:id="@+id/trustLevelTemperature"
+            android:layout_alignBottom="@id/scentLogo"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="bottom"
+            android:text="100"
+            android:textSize="15dp"
+            android:textColor="@color/scentext"
+            />
+
+
+        <TextView
+            android:id="@+id/textUsernameTemperature"
+            android:layout_alignBottom="@id/scentLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp" android:layout_toLeftOf="@id/trustLevelTemperature"
+            android:text="Username here"
+            android:textSize="15dp"
+            android:textColor="@color/scentext"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/livingLabTemperature"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scentLogo"
+            android:layout_alignStart="@id/scentLogo"
+            android:gravity="left"
+            android:text="@string/livingLabDanube"
+            android:textSize="30dp"
+            android:layout_toRightOf="@id/scentLogo"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/livingLabTemperature"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/synchronising_scent"
+            android:id="@+id/synchonising"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/synchingText"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synchonising"
+            android:layout_alignStart="@id/scentLogo"
+            android:gravity="left"
+            android:text="@string/waiting"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synchingText"
+            android:drawableLeft="@mipmap/gps_logo"
+            android:gravity="bottom"
+            android:textSize="10dp"
+            android:text="@string/gpsCoordinates"
+            android:id="@+id/gpsTemperature"
+            android:textColor="@color/scentext"
+            />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textSize="70dp"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@id/gpsTemperature"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dateMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpsTemperature"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:textSize="20dp"
+                android:text="@string/sun"
+                android:gravity="center"
+                android:id="@+id/previousThreeDateTemp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/mon"
+                android:gravity="center"
+                android:id="@+id/previousTwoDateTemp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/tue"
+                android:gravity="center"
+                android:id="@+id/previousDateTemp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="@string/today"
+                android:gravity="center"
+                android:id="@+id/todaysDateTemp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/temperatureMeasurements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateMatrix"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:drawableTop="@mipmap/temperature"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+                android:id="@+id/previousThreeMinMax"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/temperature"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+                android:id="@+id/previousTwoMinMax"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/temperature"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+                android:id="@+id/previousMinMax"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/temperature"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+                android:id="@+id/todaysMinMax"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonStartTemperature"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout" />
+
+        <ProgressBar
+            android:id="@+id/loadingTemperatureProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonStartTemperature"
+            android:layout_alignStart="@+id/relativeLayout"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:visibility="gone"
+            android:indeterminate="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/loadingTemperatureProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="TAKING MEASUREMENTS"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/takingMeasurementsTemp"
+        />
+
+
+    <Button
+        android:id="@+id/sensorSettingsTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/scentActionBar"
+        android:text="@string/sensorSettings"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+
+
+

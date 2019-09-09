@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/scentMuted">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/line"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <TextView android:layout_width="fill_parent"
+        android:id="@+id/sensor_id"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/moistureMeasurements"
+        android:textSize="20dp"
+        android:textColor="@color/scentext"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/sensor_id"
+        android:orientation="vertical"
+        android:background="@drawable/shady_background"
+
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/trustLevelMoisture"
+            android:layout_alignBottom="@id/scentLogo"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="bottom"
+            android:text="100"
+            android:textSize="15dp"
+            android:textColor="@color/scentext"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textUsernameMoisture"
+            android:layout_alignBottom="@id/scentLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/trustLevelMoisture"
+            android:text="Username here"
+            android:textColor="@color/scentext"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/scent_logo"
+            android:layout_alignParentTop="true"
+            android:id="@+id/scentLogo" />
+
+        <TextView
+            android:layout_alignBottom="@id/scentLogo"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/textFrequencyMoisture"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/sensorMeasurementFrequence"
+            android:textSize="10dp"
+            android:textColor="@color/scentext"
+            android:layout_toRightOf="@id/scentLogo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/livingLabMoisture"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scentLogo"
+            android:layout_alignStart="@id/scentLogo"
+            android:gravity="left"
+            android:text="@string/livingLabDanube"
+            android:textSize="30dp"
+            android:layout_toRightOf="@id/scentLogo"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/livingLabMoisture"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/synchronising_scent"
+            android:id="@+id/synchonising"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/synchingT"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synchonising"
+            android:layout_alignStart="@id/scentLogo"
+            android:gravity="left"
+            android:text="@string/waiting"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/gpsLogo"
+            android:layout_below="@id/synchingT"
+            android:drawableLeft="@mipmap/gps_logo"
+            android:gravity="bottom"
+            android:textSize="10dp"
+            android:textColor="@color/scentext"
+            android:text="@string/gpsCoordinates"
+            android:id="@+id/gpsLogoMoisture"
+            />
+
+        <TextView
+            android:id="@+id/moisture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textSize="70dp"
+            android:inputType="textPersonName"
+            android:layout_alignBottom="@id/gpsLogoMoisture"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/dateMatrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gpsLogoMoisture"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:textSize="20dp"
+                android:text="SUN"
+                android:gravity="center"
+                android:id="@+id/previousThreeDateMoist"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="MON"
+                android:gravity="center"
+                android:id="@+id/previousTwoDateMoist"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TUE"
+                android:gravity="center"
+                android:id="@+id/previousDateMoist"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TODAY"
+                android:gravity="center"
+                android:id="@+id/todaysDateMoist"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/moistureMeasurements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateMatrix"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:drawableTop="@mipmap/moisture_small"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+
+                android:id="@+id/previousThreeMinMaxMoist"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/moisture_small"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+
+                android:id="@+id/previousTwoMinMaxMoist"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/moisture_small"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+
+                android:id="@+id/previousMinMaxMoist"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/moisture_small"
+                android:textSize="20dp"
+                android:text="_ _\n_ _"
+                android:gravity="center"
+                android:id="@+id/todaysMinMaxMoist"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/sensorStartMoisture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout" />
+
+    <ProgressBar
+        android:id="@+id/loadingMoistureProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sensorStartMoisture"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:visibility="gone"
+        android:indeterminate="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/loadingMoistureProgressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="TAKING MEASUREMENTS"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/takingMeasurementsMoist"
+        />
+
+
+
+    <Button
+        android:id="@+id/sensorSettingsMoisture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/scentActionBar"
+        android:text="@string/sensorSettings"
+        android:textColor="@color/white" />
+
+
+
+
+</RelativeLayout>
+
+

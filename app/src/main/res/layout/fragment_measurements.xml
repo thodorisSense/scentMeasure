@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/scentMuted">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <TextView android:layout_width="fill_parent"
+        android:id="@+id/sensor_id"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/temperatureMeasurements"
+        android:textSize="20dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensor_id"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/scent_logo"
+            android:layout_alignParentTop="true"
+            android:id="@+id/scentLogo" />
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/textFrequency"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/sensorMeasurementFrequence"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/scentLogo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/livingLab"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scentLogo"
+            android:layout_alignStart="@id/scentLogo"
+            android:gravity="left"
+            android:text="@string/livingLabDanube"
+            android:textSize="50dp"
+            android:layout_toRightOf="@id/scentLogo"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/livingLab"
+            android:src="@mipmap/synchronising_scent"
+            android:id="@+id/synchonising"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/synchingText"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synchonising"
+            android:layout_alignStart="@id/scentLogo"
+            android:gravity="left"
+            android:text="@string/synching"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/scentLogo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/synchingText"
+            android:drawableLeft="@mipmap/gps_logo"
+            android:textSize="25dp"
+            android:text="GPS coordinates here"
+            android:id="@+id/gpsLogo"
+            />
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="70dp"
+            android:inputType="textPersonName"
+            android:text="20"
+
+            android:layout_above="@+id/synchingText"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/button_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/sensorSettings"
+        android:textColor="@color/white"
+        android:background="@color/scentActionBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+</RelativeLayout>
+
+
